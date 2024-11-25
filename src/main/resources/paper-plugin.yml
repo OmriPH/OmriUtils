@@ -1,0 +1,5 @@
+name: OmrisCommands
+version: '1.0-SNAPSHOT'
+main: me.omrih.omriscommands.OmrisCommands
+api-version: '1.21.1'
+bootstrapper: me.omrih.omriscommands.OmrisCommandsBootstrap
