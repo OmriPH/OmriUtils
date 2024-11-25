@@ -1,6 +1,5 @@
 package me.omrih.omriscommands;
 
-import com.mojang.brigadier.Command;
 import io.papermc.paper.command.brigadier.Commands;
 import io.papermc.paper.plugin.bootstrap.BootstrapContext;
 import io.papermc.paper.plugin.bootstrap.PluginBootstrap;
