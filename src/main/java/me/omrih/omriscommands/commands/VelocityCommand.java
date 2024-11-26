@@ -16,13 +16,13 @@ public class VelocityCommand implements BasicCommand {
         }
 
         if (!(args.length == 3)) {
-            stack.getSender().sendRichMessage("Usage: /velocity <x> <y> <z>");
+            player.sendMessage("Usage: /velocity <x> <y> <z>");
             return;
         }
 
         for (int i = 0; i < 2; i++) {
             if (!StringUtils.isNumeric(args[i])) {
-                stack.getSender().sendRichMessage("Usage: /velocity <x> <y> <z>");
+                player.sendMessage("Usage: /velocity <x> <y> <z>");
                 return;
             }
         }
@@ -37,5 +37,6 @@ public class VelocityCommand implements BasicCommand {
         int z = Integer.parseInt(zArgument);
 
         player.setVelocity(new Vector(x, y, z));
+        player.sendRichMessage("<green>Your velocity has been set to " + x + ' ' + y + ' ' + z + '!');
     }
 }
