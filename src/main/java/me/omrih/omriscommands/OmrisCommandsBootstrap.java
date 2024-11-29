@@ -5,6 +5,8 @@ import io.papermc.paper.plugin.bootstrap.BootstrapContext;
 import io.papermc.paper.plugin.bootstrap.PluginBootstrap;
 import io.papermc.paper.plugin.lifecycle.event.LifecycleEventManager;
 import io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents;
+import me.omrih.omriscommands.commands.FlyCommand;
+import me.omrih.omriscommands.commands.HugCommand;
 import me.omrih.omriscommands.commands.VelocityCommand;
 
 public class OmrisCommandsBootstrap implements PluginBootstrap {
@@ -14,6 +16,8 @@ public class OmrisCommandsBootstrap implements PluginBootstrap {
         manager.registerEventHandler(LifecycleEvents.COMMANDS, event -> {
             final Commands commands = event.registrar();
             commands.register("velocity", "Modify the player's velocity", new VelocityCommand());
+            commands.register("fly","Toggle flying", new FlyCommand());
+            commands.register("hug","Send a hug to a player", new HugCommand());
         });
     }
 }

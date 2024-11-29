@@ -5,11 +5,10 @@ import io.papermc.paper.command.brigadier.CommandSourceStack;
 import org.apache.commons.lang3.StringUtils;
 import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
-import org.jetbrains.annotations.NotNull;
 
 public class VelocityCommand implements BasicCommand {
     @Override
-    public void execute(@NotNull CommandSourceStack stack, @NotNull String[] args) {
+    public void execute(CommandSourceStack stack, String[] args) {
         if (!(stack.getSender() instanceof Player player)) {
             stack.getSender().sendRichMessage("<red>Only players can execute this command!");
             return;
