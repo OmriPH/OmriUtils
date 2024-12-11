@@ -15,9 +15,9 @@ public class OmrisCommandsBootstrap implements PluginBootstrap {
         LifecycleEventManager<BootstrapContext> manager = context.getLifecycleManager();
         manager.registerEventHandler(LifecycleEvents.COMMANDS, event -> {
             final Commands commands = event.registrar();
-            commands.register("velocity", "Modify the player's velocity", new VelocityCommand());
-            commands.register("fly","Toggle flying", new FlyCommand());
-            commands.register("hug","Send a hug to a player", new HugCommand());
+            FlyCommand.register(commands);
+            HugCommand.register(commands);
+            VelocityCommand.register(commands);
         });
     }
 }
