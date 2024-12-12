@@ -9,6 +9,7 @@ public class FlyCommand {
         commands.register(
                 Commands.literal("fly")
                         .requires(commandSourceStack -> commandSourceStack.getExecutor() instanceof Player)
+                        .requires(commandSourceStack -> commandSourceStack.getExecutor().hasPermission("omriscommands.fly"))
                         .executes(context -> {
                             Player player = (Player) context.getSource().getExecutor();
                             if (player.getAllowFlight()) {

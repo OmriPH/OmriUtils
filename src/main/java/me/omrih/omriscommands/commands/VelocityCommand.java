@@ -12,6 +12,7 @@ public class VelocityCommand {
         commands.register(
                 Commands.literal("velocity")
                         .requires(commandSourceStack -> commandSourceStack.getExecutor() instanceof Player)
+                        .requires(commandSourceStack -> commandSourceStack.getExecutor().hasPermission("omriscommands.velocity"))
                         .then(
                                 Commands.argument("x", integer())
                                         .then(Commands.argument("y", integer())
