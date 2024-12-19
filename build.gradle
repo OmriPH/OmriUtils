@@ -47,6 +47,7 @@ tasks {
         dependsOn(shadowJar)
     }
     shadowJar {
+        archiveClassifier = ""
         dependencies {
             relocate("org.bstats", "me.omrih.omriutils.lib.bstats")
         }
