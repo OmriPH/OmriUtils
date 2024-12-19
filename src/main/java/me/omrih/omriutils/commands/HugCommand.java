@@ -9,6 +9,7 @@ import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
+@SuppressWarnings("UnstableApiUsage")
 public class HugCommand {
     public static void register(Commands commands) {
         commands.register(

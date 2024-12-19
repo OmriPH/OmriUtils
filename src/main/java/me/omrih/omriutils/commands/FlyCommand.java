@@ -4,6 +4,7 @@ import com.mojang.brigadier.Command;
 import io.papermc.paper.command.brigadier.Commands;
 import org.bukkit.entity.Player;
 
+@SuppressWarnings("UnstableApiUsage")
 public class FlyCommand {
     public static void register(Commands commands) {
         commands.register(

@@ -8,6 +8,7 @@ import io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents;
 import me.omrih.omriutils.commands.FlyCommand;
 import me.omrih.omriutils.commands.HugCommand;
 
+@SuppressWarnings("UnstableApiUsage")
 public class OmriUtilsBootstrap implements PluginBootstrap {
     @Override
     public void bootstrap(BootstrapContext context) {
