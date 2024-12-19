@@ -1,4 +1,4 @@
-package me.omrih.omriscommands.commands;
+package me.omrih.omriutils.commands;
 
 import com.mojang.brigadier.Command;
 import io.papermc.paper.command.brigadier.Commands;
@@ -9,7 +9,7 @@ public class FlyCommand {
         commands.register(
                 Commands.literal("fly")
                         .requires(commandSourceStack -> commandSourceStack.getExecutor() instanceof Player)
-                        .requires(commandSourceStack -> commandSourceStack.getExecutor().hasPermission("omriscommands.fly"))
+                        .requires(commandSourceStack -> commandSourceStack.getExecutor().hasPermission("omriutils.fly"))
                         .executes(context -> {
                             Player player = (Player) context.getSource().getExecutor();
                             if (player.getAllowFlight()) {

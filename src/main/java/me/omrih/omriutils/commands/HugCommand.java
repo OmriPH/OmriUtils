@@ -1,4 +1,4 @@
-package me.omrih.omriscommands.commands;
+package me.omrih.omriutils.commands;
 
 import com.mojang.brigadier.Command;
 import io.papermc.paper.command.brigadier.Commands;

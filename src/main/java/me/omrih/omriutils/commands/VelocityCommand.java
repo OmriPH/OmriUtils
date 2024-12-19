@@ -1,4 +1,4 @@
-package me.omrih.omriscommands.commands;
+package me.omrih.omriutils.commands;
 
 import com.mojang.brigadier.Command;
 import io.papermc.paper.command.brigadier.Commands;
@@ -12,7 +12,7 @@ public class VelocityCommand {
         commands.register(
                 Commands.literal("velocity")
                         .requires(commandSourceStack -> commandSourceStack.getExecutor() instanceof Player)
-                        .requires(commandSourceStack -> commandSourceStack.getExecutor().hasPermission("omriscommands.velocity"))
+                        .requires(commandSourceStack -> commandSourceStack.getExecutor().hasPermission("omriutils.velocity"))
                         .then(
                                 Commands.argument("x", integer())
                                         .then(Commands.argument("y", integer())

@@ -1,15 +1,15 @@
-package me.omrih.omriscommands;
+package me.omrih.omriutils;
 
 import io.papermc.paper.command.brigadier.Commands;
 import io.papermc.paper.plugin.bootstrap.BootstrapContext;
 import io.papermc.paper.plugin.bootstrap.PluginBootstrap;
 import io.papermc.paper.plugin.lifecycle.event.LifecycleEventManager;
 import io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents;
-import me.omrih.omriscommands.commands.FlyCommand;
-import me.omrih.omriscommands.commands.HugCommand;
-import me.omrih.omriscommands.commands.VelocityCommand;
+import me.omrih.omriutils.commands.FlyCommand;
+import me.omrih.omriutils.commands.HugCommand;
+import me.omrih.omriutils.commands.VelocityCommand;
 
-public class OmrisCommandsBootstrap implements PluginBootstrap {
+public class OmriUtilsBootstrap implements PluginBootstrap {
     @Override
     public void bootstrap(BootstrapContext context) {
         LifecycleEventManager<BootstrapContext> manager = context.getLifecycleManager();

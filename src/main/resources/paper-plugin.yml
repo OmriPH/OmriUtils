@@ -1,5 +1,5 @@
-name: OmrisCommands
+name: OmriUtils
 version: '1.0-SNAPSHOT'
-main: me.omrih.omriscommands.OmrisCommands
+main: me.omrih.omriutils.OmriUtilsPlugin
 api-version: '1.21.1'
-bootstrapper: me.omrih.omriscommands.OmrisCommandsBootstrap
+bootstrapper: me.omrih.omriscommands.OmriUtilsBootstrap
