@@ -7,7 +7,6 @@ import io.papermc.paper.plugin.lifecycle.event.LifecycleEventManager;
 import io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents;
 import me.omrih.omriutils.commands.FlyCommand;
 import me.omrih.omriutils.commands.HugCommand;
-import me.omrih.omriutils.commands.VelocityCommand;
 
 public class OmriUtilsBootstrap implements PluginBootstrap {
     @Override
@@ -17,7 +16,6 @@ public class OmriUtilsBootstrap implements PluginBootstrap {
             final Commands commands = event.registrar();
             FlyCommand.register(commands);
             HugCommand.register(commands);
-            VelocityCommand.register(commands);
         });
     }
 }
