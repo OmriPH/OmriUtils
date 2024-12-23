@@ -1,5 +1,5 @@
 name: OmriUtils
-version: '1.0.0'
+version: '1.0.1'
 main: me.omrih.omriutils.OmriUtilsPlugin
 api-version: '1.21.3'
 bootstrapper: me.omrih.omriutils.OmriUtilsBootstrap
