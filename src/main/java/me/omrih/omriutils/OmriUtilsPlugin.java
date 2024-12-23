@@ -8,7 +8,7 @@ public final class OmriUtilsPlugin extends JavaPlugin {
     @Override
     public void onEnable() {
         int pluginId = 24190;
-        Metrics metrics = new Metrics(this, pluginId);
+        new Metrics(this, pluginId);
     }
 
     @Override
