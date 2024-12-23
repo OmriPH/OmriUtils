@@ -14,11 +14,11 @@ public class HugCommand {
     public static void register(Commands commands) {
         commands.register(
                 Commands.literal("hug")
-                        .requires(commandSourceStack -> commandSourceStack.getExecutor() instanceof Player)
+                        .requires(commandSourceStack -> commandSourceStack.getSender() instanceof Player)
                         .then(
                                 Commands.argument("player", ArgumentTypes.players())
                                         .executes(context -> {
-                                            Player player = (Player) context.getSource().getExecutor();
+                                            Player player = (Player) context.getSource().getSender();
                                             Player playerArg = context.getArgument("player", PlayerSelectorArgumentResolver.class).resolve(context.getSource()).getFirst();
                                             if (!playerArg.getName().equals(player.getName())) {
                                                 Bukkit.getServer().broadcast(Component.text(player.getName() + " sends a warm hug to " + playerArg.getName(), NamedTextColor.GREEN));
