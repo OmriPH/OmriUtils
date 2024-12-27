@@ -16,7 +16,7 @@ public class HugCommand {
                 Commands.literal("hug")
                         .requires(commandSourceStack -> commandSourceStack.getSender() instanceof Player)
                         .then(
-                                Commands.argument("player", ArgumentTypes.players())
+                                Commands.argument("player", ArgumentTypes.player())
                                         .executes(context -> {
                                             Player player = (Player) context.getSource().getSender();
                                             Player playerArg = context.getArgument("player", PlayerSelectorArgumentResolver.class).resolve(context.getSource()).getFirst();
