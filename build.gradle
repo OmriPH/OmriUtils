@@ -22,6 +22,7 @@ repositories {
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.3-R0.1-SNAPSHOT")
     implementation("org.bstats:bstats-bukkit:3.0.2")
+    implementation("io.papermc:paper-trail:1.0.1")
 }
 
 def targetJavaVersion = 21
@@ -50,6 +51,7 @@ tasks {
         archiveClassifier = ""
         dependencies {
             relocate("org.bstats", "me.omrih.omriutils.lib.bstats")
+            relocate("io.papermc", "me.omrih.omriutils.lib.papermc")
         }
     }
     runServer {

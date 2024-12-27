@@ -1,0 +1,4 @@
+name: OmriUtils
+version: '1.2.0'
+main: me.omrih.omriutils.lib.papermc.papertrail.RequiresPaperPlugins
+api-version: '1.21.3'
