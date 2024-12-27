@@ -1,4 +1,4 @@
 name: OmriUtils
-version: '1.2.0'
+version: ${version}
 main: me.omrih.omriutils.OmriUtilsPlugin
 api-version: '1.21.3'
